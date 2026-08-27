@@ -12,7 +12,7 @@ extension `Property.Borrow.Typed Tests`.Unit {
 
     @Test
     func `borrow typed basic usage`() {
-        var slice = Slice<Int>(count: 5)
+        let slice = Slice<Int>(count: 5)
 
         #expect(slice.peek.size == 5)
     }

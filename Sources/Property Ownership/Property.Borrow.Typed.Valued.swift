@@ -1,6 +1,6 @@
-public import Ownership_Borrow
-public import Property
-public import Tagged
+public import enum Ownership.Ownership
+public import struct Property.Property
+public import struct Tagged.Tagged
 
 extension Property.Borrow.Typed where Base: ~Copyable, Element: ~Copyable {
 

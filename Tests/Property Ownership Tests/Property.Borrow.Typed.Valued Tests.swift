@@ -1,3 +1,5 @@
+import enum Ownership.Ownership
+import struct Property.Property
 import Property_Ownership
 import Testing
 

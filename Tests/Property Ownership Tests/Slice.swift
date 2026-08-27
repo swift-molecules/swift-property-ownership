@@ -1,3 +1,4 @@
+import enum Ownership.Ownership
 public import Property
 public import Property_Ownership
 

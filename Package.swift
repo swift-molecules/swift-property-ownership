@@ -19,15 +19,15 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/swift-molecules/swift-property.git",
+            url: "https://github.com/swift-atoms/swift-property.git",
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-molecules/swift-ownership.git",
+            url: "https://github.com/swift-atoms/swift-ownership.git",
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-molecules/swift-tagged.git",
+            url: "https://github.com/swift-atoms/swift-tagged.git",
             branch: "main"
         ),
     ],
@@ -36,8 +36,7 @@ let package = Package(
             name: "Property Ownership",
             dependencies: [
                 .product(name: "Property", package: "swift-property"),
-                .product(name: "Ownership Inout", package: "swift-ownership"),
-                .product(name: "Ownership Borrow", package: "swift-ownership"),
+                .product(name: "Ownership", package: "swift-ownership"),
                 .product(name: "Tagged", package: "swift-tagged"),
             ]
         ),
@@ -45,6 +44,7 @@ let package = Package(
             name: "Property Ownership Tests",
             dependencies: [
                 "Property Ownership",
+                .product(name: "Ownership", package: "swift-ownership"),
                 .product(name: "Property", package: "swift-property"),
             ],
             path: "Tests/Property Ownership Tests"

@@ -1,6 +1,6 @@
-@_exported public import Ownership_Inout
-public import Property
-public import Tagged
+public import enum Ownership.Ownership
+public import struct Property.Property
+public import struct Tagged.Tagged
 
 extension Property where Base: ~Copyable {
 
