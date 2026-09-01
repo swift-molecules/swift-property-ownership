@@ -37,12 +37,16 @@ let package = Package(
             dependencies: [
                 .product(name: "Property", package: "swift-property"),
                 .product(name: "Ownership", package: "swift-ownership"),
+                .product(name: "Ownership Borrow", package: "swift-ownership"),
+                .product(name: "Ownership Inout", package: "swift-ownership"),
                 .product(name: "Tagged", package: "swift-tagged"),
             ]
         ),
         .testTarget(
             name: "Property Ownership Tests",
             dependencies: [
+                .product(name: "Ownership Borrow", package: "swift-ownership"),
+                .product(name: "Ownership Inout", package: "swift-ownership"),
                 "Property Ownership",
                 .product(name: "Ownership", package: "swift-ownership"),
                 .product(name: "Property", package: "swift-property"),

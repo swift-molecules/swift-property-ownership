@@ -1,3 +1,5 @@
+import Ownership_Borrow
+import Ownership_Inout
 import enum Ownership.Ownership
 import struct Property.Property
 import Property_Ownership

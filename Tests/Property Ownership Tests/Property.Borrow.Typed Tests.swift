@@ -1,3 +1,5 @@
+import Ownership_Borrow
+import Ownership_Inout
 import Property_Ownership
 import Testing
 

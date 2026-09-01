@@ -1,3 +1,5 @@
+import Ownership_Borrow
+import Ownership_Inout
 import enum Ownership.Ownership
 public import Property
 public import Property_Ownership

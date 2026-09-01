@@ -1,4 +1,5 @@
 public import enum Ownership.Ownership
+public import Ownership_Borrow
 public import struct Property.Property
 public import struct Tagged.Tagged
 
